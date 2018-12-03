@@ -10,5 +10,10 @@
     <div class="root">not rendered</div>
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script>
+        const App = () => {
+            return React.createElement("div", {id : "my-id"}, Reacrt.createElement('h1', {}, "Adopt me"))
+        }
+    </script>
 </body>
 </html>
