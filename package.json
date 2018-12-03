@@ -1,4 +1,3 @@
-// npm init -y to create package.json 
 {
   "name": "understanding-react",
   "version": "1.0.0",
