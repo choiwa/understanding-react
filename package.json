@@ -6,7 +6,7 @@
   "scripts": {
     "format": "prettier --write \"src/**/*.{js,jsx,css,json}\"",
     "format:check": "prettier --list-different \"src/**/*.{js,jsx,css,json}\"",
-    "lint": "eslint \"**/*.{js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,8 +22,12 @@
   "homepage": "https://github.com/choiwa/understanding-react#readme",
   "devDependencies": {
     "eslint-config-prettier": "^3.3.0",
+    "eslint-config-react": "^1.1.7",
     "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
     "prettier": "1.15.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "eslint": "^5.9.0"
+  }
 }
