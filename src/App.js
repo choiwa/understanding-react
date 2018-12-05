@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+// alternative to import render from 'react-dom';
+// import { render } from "react-dom";
 
 const Pet = props => {
   return React.createElement("div", {}, [
@@ -24,4 +26,6 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(React.createElement(App), document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
+// alternative to import render from 'react-dom';
+// render(<App />, document.getElementById("root"));
