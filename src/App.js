@@ -4,14 +4,23 @@ import Pet from "./Pet";
 
 class App extends React.Component {
   render() {
-    return React.createElement("div", {}, [
-      React.createElement("h1", {}, "Adopt me!"),
-      React.createElement(Pet, {
-        name: "Luna",
-        animal: "Dog",
-        breed: "havanese"
-      })
-    ]);
+    // return React.createElement("div", {}, [
+    //   React.createElement("h1", {}, "Adopt me!"),
+    //   React.createElement(Pet, {
+    //     name: "Luna",
+    //     animal: "Dog",
+    //     breed: "havanese"
+    //   })
+    // ]);
+
+    return (
+      <div>
+        <h1>Adopt me!</h1>
+        <Pet name="luna" animal="dog" breed="havanese" />
+        <Pet name="Pepper" animal="bird" breed="Cockatiel" />
+        <Pet name="Doink" animal="cat" breed="Mixed" />
+      </div>
+    );
   }
 }
 
