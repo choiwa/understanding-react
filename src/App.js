@@ -2,7 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Pet from "./Pet";
 import pf from "petfinder-client";
-// test
+
+const petfinder = pf({
+  key: process.env.API_KEY,
+  secret: process.env.API_SECRET
+});
 class App extends React.Component {
   render() {
     // return React.createElement("div", {}, [
