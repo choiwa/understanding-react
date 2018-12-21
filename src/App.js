@@ -51,7 +51,7 @@ class App extends React.Component {
       <div>
         <h1>Adopt me!</h1>
         <div>
-          {this.state.pets.map((pet, i) => {
+          {this.state.pets.map(pet => {
             let breed;
 
             if (Array.isArray(pet.breeds.breed)) {
@@ -60,7 +60,12 @@ class App extends React.Component {
               breed = pet.breeds.breed;
             }
             return (
-              <Pet key={i} animal={pet.animal} name={pet.name} breed={breed} />
+              <Pet
+                key={pet.id}
+                animal={pet.animal}
+                name={pet.name}
+                breed={breed}
+              />
             );
           })}
         </div>
